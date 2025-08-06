@@ -47,9 +47,7 @@ const Navigation = () => {
             <div className="p-2 bg-gradient-to-r from-primary to-secondary rounded-lg">
               <Heart className="h-6 w-6 text-white" />
             </div>
-            <span className={`text-xl font-bold ${
-              isScrolled ? "text-foreground" : "text-white"
-            }`}>
+            <span className={`text-xl font-bold text-black`}>
               HopeConnect
             </span>
           </motion.div>
@@ -63,7 +61,7 @@ const Navigation = () => {
                   className={`font-medium transition-colors hover:text-primary ${
                     location.pathname === item.href 
                       ? "text-primary" 
-                      : isScrolled ? "text-foreground" : "text-white"
+                      : "text-black"
                   }`}
                 >
                   {item.name}
@@ -85,9 +83,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className={`md:hidden p-2 ${
-              isScrolled ? "text-foreground" : "text-white"
-            }`}
+            className={`md:hidden p-2 text-black`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

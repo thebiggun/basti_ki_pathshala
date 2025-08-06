@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Globe, Users, Target, Award } from "lucide-react";
+import imageSarah from "@/assets/imageSarah.jpg";
 
 const AboutSection = () => {
   const [ref, inView] = useInView({
@@ -16,7 +17,7 @@ const AboutSection = () => {
       position: "Executive Director",
       experience: "15+ years in international development",
       bio: "Leading global initiatives with a focus on sustainable community development and education.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&h=687&q=80",
+      image: imageSarah,
     },
     {
       name: "Dr. James Rodriguez",
